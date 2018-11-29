@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const path = require('path');
-const PORT = 8080;
+const PORT = 3000;
 const app = express();
 
 app.use(express.static(__dirname + '/dist/news-app'));
@@ -11,5 +11,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(process.env.PORT || 8080);
+  console.log(process.env.PORT || 3000);
 });
